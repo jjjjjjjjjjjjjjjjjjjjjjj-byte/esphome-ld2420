@@ -1,14 +1,22 @@
 #pragma once
 
-#include "esphome.h"
+#include "esphome/core/component.h"
+#include "esphome/components/uart/uart.h"
+#include "esphome/core/log.h"
 
-class LD2420 : public PollingComponent, public UARTDevice {
+namespace esphome {
+namespace ld2420 {
+
+class LD2420 : public PollingComponent, public uart::UARTDevice {
  public:
-  LD2420(UARTComponent *parent) : PollingComponent(15000), UARTDevice(parent) {}
+  explicit LD2420(uart::UARTComponent *parent) : uart::UARTDevice(parent) {}
 
   void setup() override;
-  void loop() override;
   void update() override;
+
+ protected:
+  void parse_data_(const std::string &data);
 };
 
-
+}  // namespace ld2420
+}  // namespace esphome
