@@ -1,7 +1,8 @@
 {
-  "codeowners": ["jjjjjjjjjjjjjjjjjjjjjjj-byte"],
-  "dependencies": [],
   "domain": "ld2420",
   "name": "LD2420 Sensor",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "codeowners": ["@jjjjjjjjjjjjjjjjjjjjjjj-byte"],
+  "dependencies": ["uart"],
+  "documentation": "https://github.com/jjjjjjjjjjjjjjjjjjjjjjj-byte/esphome-ld2420"
 }
