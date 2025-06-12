@@ -1,0 +1,7 @@
+{
+  "codeowners": ["jjjjjjjjjjjjjjjjjjjjjjj-byte"],
+  "dependencies": [],
+  "domain": "ld2420",
+  "name": "LD2420 Sensor",
+  "version": "1.0.0"
+}
